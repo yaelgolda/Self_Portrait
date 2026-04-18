@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    align-items: center;    /* Vertically centers */
+    justify-content: center; /* Horizontally centers */
+    height: 500px;           /* Requires a defined height */
+}
+
+p {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#binary::after {
+    content: '|';
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    1%, 100% { opacity: 1;}
+    50% { opacity: 0; }
+}
